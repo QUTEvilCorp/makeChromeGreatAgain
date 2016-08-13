@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Extension",
+  "version": "0.1",
+  "web_accessible_resources": ["img/wall.jpg"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": [
+            "js/libs/jquery-3.1.0.min.js",
+            "js/features/buildAWall.js",
+            "js/features/colorLinks.js",
+            "js/features/comicSans.js",
+            "js/features/grammar.js",
+            "js/features/hyperlinks.js",
+            "js/features/moveImages.js",
+            "js/features/rightToLeft.js",
+            "js/features/rotateDivs.js",
+            "js/features/ruinGoogle.js",
+            "js/features/searchReverser.js",
+            "js/features/semicolonSwap.js",
+            "js/main.js"
+      ],
+      "css": ["css/styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
