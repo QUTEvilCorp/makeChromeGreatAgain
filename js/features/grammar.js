@@ -1,5 +1,5 @@
 function grammar() {
-    // [original, new, frequency (optional)] 
+    // [original, new, frequency (optional)]
     var replaceTerms = [
         ["it's", "its"],
         ["it’s", "its"],
@@ -17,19 +17,19 @@ function grammar() {
     ]
 
     //Floating point number from 0 to 1 representing what % of the time this should show up.
-    var defaultFreq = 1;
+    var defaultFreq = .1;
 
     console.log("grammar start");
     $("p, li").each(function() {
         for (var i = 0; i < replaceTerms.length; i++) {
-            if (Math.random() <= defaultFreq)
+            if (Math.random() <= defaultFreq) {
                 var oldHTML = this.innerHTML;
                 this.innerHTML = this.innerHTML.replace(replaceTerms[i][0], replaceTerms[i][1]); // Currently will only replace first instance in each tag, but should be good enough.
                 if (oldHTML != this.innerHTML) {
                     console.log(this.innerHTML);
                 }
+            }
         }
     });
     console.log("grammar end");
 }
-
