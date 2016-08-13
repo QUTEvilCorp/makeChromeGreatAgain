@@ -8,19 +8,31 @@
       "matches": ["http://*/*", "https://*/*"],
       "js": [
             "js/libs/jquery-3.1.0.min.js",
+            "js/libs/d3.v3.min.js",
             "js/features/buildAWall.js",
             "js/features/colorLinks.js",
             "js/features/comicSans.js",
+            "js/features/deadPixel.js",
+            "js/features/faultyKeyboard.js",
+            "js/features/faultyScreen.js",
+            "js/features/faultySpeaker.js",
             "js/features/grammar.js",
             "js/features/hyperlinks.js",
             "js/features/moveImages.js",
             "js/features/rightToLeft.js",
-            "js/features/rotateDivs.js",
+            "js/features/skewDivs.js",
             "js/features/ruinGoogle.js",
             "js/features/searchReverser.js",
             "js/features/semicolonSwap.js",
+            "js/features/videoBuffer.js",
             "js/main.js"
       ],
+      "css": ["css/styles.css"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*"],
+      "js": ["js/libs/jquery-3.1.0.min.js", "js/features/videoBuffer.js"],
       "css": ["css/styles.css"],
       "run_at": "document_end"
     }
