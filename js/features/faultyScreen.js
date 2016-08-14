@@ -11,7 +11,7 @@ function faultyScreen() {
   //Break screen 10 seconds after full-screen is entered
   document.addEventListener('webkitfullscreenchange', function() {
     if (document.webkitFullscreenElement) {
-      window.setTimeout(fuckScreen, randBetween(10000, 30000));
+      window.setTimeout(fuckScreen, randBetween(5000, 10000));
     } else {
       $('#break-screen').remove();
     }
