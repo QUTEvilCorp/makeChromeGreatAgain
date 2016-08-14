@@ -1,6 +1,6 @@
 function buildAWall() {
     if (document.body.innerHTML.match(/([tT]rump|[mM]exic(o|an))/)){
-        document.body.innerHTML += '<canvas id="canvas" class="wall" width="5000" height="150">';
+        document.body.innerHTML += '<canvas id="canvas" class="wall" width="5000" height="150" style="z-index: 2500">';
 
         function drawBrick(context, brickNum, y){
             //Whole function can be cleaned up a bit

@@ -17,7 +17,7 @@ function grammar() {
     ]
 
     //Floating point number from 0 to 1 representing what % of the time this should show up.
-    var defaultFreq = .1;
+    var defaultFreq = 0.1;
 
     console.log("grammar start");
     $("p, li").each(function() {
