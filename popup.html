@@ -1,34 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/libs/jquery-3.1.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
 <body>
-<form>
-  <label>Scared Links</label><input type='checkbox' value='scaredLinks'>
-  <label>Scared Links</label><input type='checkbox' value='feature2'>
-</form>
-<script>
-var checkboxes = $('input[type=checkbox]');
-var chkBoxes = {};
-checkboxes.each(function (index, value) 
-{
-	chkBoxes[$(value).val()] = false;
-});
-checkboxes.each(function (index, value) 
-{
-  this.onchange = function()
-  {
-  	if (chkBoxes[$(value).val()] === false)
-  	{
-  		chkBoxes[$(value).val()] = true;
-  	}
-  	else 
-  	{
-  		chkBoxes[$(value).val()] = false;
-  	}
-  }
-});
-</script>
+<textarea type="textarea" id="txtNote" rows="5" cols="50"></textarea>
+<script src="popup.js"></script>
 </body>
-</hhtml>
+</html>
