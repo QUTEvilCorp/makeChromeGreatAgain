@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Extension",
   "version": "0.1",
-  "web_accessible_resources": ["img/wall.jpg"],
+  "web_accessible_resources": [],
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*", "file://*/*"],

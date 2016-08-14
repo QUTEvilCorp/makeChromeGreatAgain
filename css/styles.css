@@ -20,3 +20,11 @@
   z-index: 2147483647 !important;
   cursor: none !important;
 }
+
+.wall {
+    position:fixed;
+    bottom:0px;
+    background-color: red;
+    left:0px;
+    clear:left;
+}
