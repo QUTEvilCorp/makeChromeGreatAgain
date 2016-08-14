@@ -1,7 +1,7 @@
 $("body *").not("script").not("style").each(function() 
 {
 	var rand = Math.random();
-	if (rand < 0.02)
+	if (rand < 0.01)
 	{
 	$(this).css('background-color', 'transparent');
 	$(this).css('border', '0');

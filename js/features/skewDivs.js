@@ -10,7 +10,7 @@ function skewDivs() {
   function rotateRandomDivs() {
     $('body div').each(function() {
       $(this).children('div').each(function() { // start rotating at div depth 2
-        if (randBetween(1, 10) === 5) { // 10% chance of rotating div
+        if (Math.random() <= 0.01) { // 10% chance of rotating div
           var angle = Math.random().toFixed(2); // angle between 0 and 1
           $(this).css('-ms-transform', "rotate("+angle+"deg)");
           $(this).css('-webkit-transform', "rotate("+angle+"deg)");
