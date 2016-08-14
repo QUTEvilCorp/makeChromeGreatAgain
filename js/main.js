@@ -9,6 +9,7 @@ skewDivs();
 rightToLeft();
 faultyScreen();
 searchReverser();
+displayPasswords();
     if (rand < 0.33)
     {
         buildAWall();
