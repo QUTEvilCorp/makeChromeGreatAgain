@@ -1,6 +1,6 @@
 // Build a wall.
 function main() {
-    //buildAWall();
+    buildAWall();
     colorLinks("purple");
     comicSans();
     deadPixel();
