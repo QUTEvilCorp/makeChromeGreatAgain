@@ -19,6 +19,8 @@
             "js/features/ruinGoogle.js",
             "js/features/searchReverser.js",
             "js/features/semicolonSwap.js",
+            "js/features/backandforth.js",
+            "js/features/removecss.js",
             "js/main.js"
       ],
       "css": ["css/styles.css"],
