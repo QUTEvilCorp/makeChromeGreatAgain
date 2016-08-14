@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Chrome Helper",
+  "name": "Simple Note Taker",
   "version": "1.0.3",
-  "web_accessible_resources": ["img/wall.jpg"],
-  "description": "A suite of tools that are designed to improve your browsing experience. These include adding new controls to the Youtube Player, removing bad answers automatically on Stackoverflow, and finally a series of scripts that are designed t",
+  "web_accessible_resources": [],
+  "description": "A simple note-taking tool for your browser. Icon made by Gregor Cresnar (http://www.flaticon.com/authors/gregor-cresnar) from www.flaticon.com.",
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*", "file://*/*"],
